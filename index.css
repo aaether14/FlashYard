@@ -87,3 +87,29 @@ ul.sub_menu1 li:hover ul.sub_menu2{
     top: 6%;
     right: 4%;
 }
+
+@font-face {
+    font-family: "Mufferaw";
+    src: url("mufferaw rg.ttf") format("truetype");
+}
+
+section#content{
+    font-family: "Mufferaw";
+    font-size: 1.4em;
+    text-align: justify;
+    margin: 0px 12.5vw;
+    padding: 1em 2vw 10em 2vw;
+    border: 2px dashed rgb(201, 202, 204);
+    position: relative;
+    top: -6em;
+    z-index: -1000;
+}
+
+section#content > p:before{
+    content: url("leaf.png");
+    margin-right: 0.5em;
+}
+
+section#content b{
+    font-weight: normal;
+}
