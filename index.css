@@ -5,6 +5,7 @@
 body {
     font-family: "sans-serif";
     padding: 4%;
+    text-align: center;
 }
 
 header{
@@ -98,7 +99,7 @@ ul.sub_menu1 li:hover ul.sub_menu2{
     src: url("dreamofme.ttf") format("truetype");
 }
 
-section#content{
+div#content{
     font-family: "Mufferaw";
     font-size: 1.4em;
     text-align: justify;
@@ -106,16 +107,16 @@ section#content{
     padding: 1em 2vw 1em 2vw;
     border: 2px dashed rgb(201, 202, 204);
     position: relative;
-    top: -6em;
+    top: -4em;
     z-index: -1000;
 }
 
-section#content > p:before{
+section#story > p:before{
     content: url("leaf.png");
     margin-right: 0.5em;
 }
 
-section#content b{
+section#story b{
     font-weight: inherit;
 }
 
@@ -126,13 +127,21 @@ section#teaser {
 }
 
 footer{
-    margin: 0px 15vw;
-    text-align: center;
+    display: inline-block;
 }
 
 footer img.evergreen{
     width: 2em;
+    padding: 0px 0.5em;
 }
+
+footer img:nth-child(1){
+    float: left;
+}
+
+footer img:nth-child(2){
+    float: right;
+}  
 
 footer small{
     font-family: "proxima-nova";
