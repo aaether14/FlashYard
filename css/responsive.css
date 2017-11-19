@@ -1,0 +1,32 @@
+@media screen and (min-width:650px) and (max-width:1000px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width:650px) {
+    html {
+        font-size: 8px;
+    }
+    nav li {
+        width: 16.0vw;
+    }
+}
+
+@media screen and (max-width:350px) {
+    html {
+        font-size: 6px;
+    }
+    header img{
+        width: 100%;
+    }
+    nav li {
+        width: 18.0vw;
+    }
+    nav li a {
+        border-width: 0.25rem;
+    }
+    main {
+        width: 75%;
+    }
+}

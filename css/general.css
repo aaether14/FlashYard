@@ -2,33 +2,37 @@
     margin: 0px;
     padding: 0px;
 }
-body {
-    font-family: "sans-serif";
-    padding: 4%;
-    text-align: center;
+
+html {
+    font-size: 16px;
 }
 
-header{
+body {
+    font-family: "sans-serif";
+    padding: 1rem;
     text-align: center;
 }
 
 header img {
-    border-bottom: 3px solid rgb(20, 33, 85);
-    margin-bottom: 2%;
+    display: block;
+    margin: 0px auto;
+    border-bottom: 0.25rem solid rgb(20, 33, 85);
+    margin-bottom: 1.5rem;
 }
 
 nav{
+    width: 100%;
     text-align: center;
 }
 
 nav ul {
     display: inline-block;
     list-style-type: none;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 nav li {
-    width: 13.8vw;
+    width: 14.0vw;
     text-align: center;
     position: relative;
     float: left;
@@ -37,10 +41,10 @@ nav li {
 nav li a {
     text-decoration: none;
     display: block;
-    line-height: 3em;
+    line-height: 3rem;
     background-color: white;
     color: gray;
-    border: 3px solid rgb(20, 33, 85);
+    border: 0.2rem solid rgb(20, 33, 85);
     border-radius: 5px;
     font-weight: bold;
 }
@@ -50,13 +54,9 @@ nav li a::first-letter{
 }
 
 ul.sub_menu1, ul.sub_menu2{
-    visibility: hidden;
-}
-
-ul.sub_menu2{
     position: absolute;
-    left: 100%;
-    top: 0%;
+    display: none;
+    left: 0%;
 }
 
 nav li:hover > a{
@@ -68,52 +68,51 @@ ul.sub_menu1 a:hover{
 }
 
 nav li:hover ul.sub_menu1{
-    visibility: visible;
+    display: initial;
 }
 
 ul.sub_menu1 li:hover ul.sub_menu2{
-    visibility: visible;
+    display: initial;
 }
 
 .darrow {
-    font-size: 1.0em;
+    font-size: 1.0rem;
     position: absolute;
-    top: 0.1em;
-    right: 4%;
+    top: 0.3rem;
+    right: 0.5rem;
 }
 
 .rarrow {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     position: absolute;
-    top: 6%;
-    right: 4%;
+    top: 0.3rem;
+    right: 0.5rem;
 }
 
 @font-face {
     font-family: "Mufferaw";
-    src: url("mufferaw rg.ttf") format("truetype");
+    src: url("../data/fonts/mufferaw rg.ttf") format("truetype");
 }
 
 main{
     font-family: "Mufferaw";
-    font-size: 1.4em;
+    font-size: 1.4rem;
     text-align: justify;
-    margin: 0px 12.5vw;
-    padding: 1em 2vw 1em 2vw;
-    border: 2px dashed rgb(201, 202, 204);
-    position: relative;
-    top: -4em;
+    width: 65%;
+    margin: 1.5rem auto;
+    padding: 1rem 2vw 1rem 2vw;
+    border: 0.2rem dashed rgb(201, 202, 204);
     z-index: -1000;
 }
 
 main section:first-of-type > h2 {
     text-align: center;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.5rem;
 }
 
 main section:first-of-type > p:before {
-    content: url("leaf.png");
-    margin-right: 0.5em;
+    content: url("../data/images/leaf.png");
+    margin-right: 0.5rem;
 }
 
 main section:first-of-type b {
@@ -125,8 +124,8 @@ footer{
 }
 
 footer img.evergreen{
-    width: 2em;
-    padding: 0px 0.5em;
+    width: 2rem;
+    padding: 0px 0.5rem;
 }
 
 footer img:nth-child(1){
