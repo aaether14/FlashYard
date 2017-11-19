@@ -94,12 +94,7 @@ ul.sub_menu1 li:hover ul.sub_menu2{
     src: url("mufferaw rg.ttf") format("truetype");
 }
 
-@font-face {
-    font-family: "Dreamofme";
-    src: url("dreamofme.ttf") format("truetype");
-}
-
-div#content{
+main{
     font-family: "Mufferaw";
     font-size: 1.4em;
     text-align: justify;
@@ -111,19 +106,18 @@ div#content{
     z-index: -1000;
 }
 
-section#story > p:before{
+main section:first-of-type > h2 {
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+
+main section:first-of-type > p:before {
     content: url("leaf.png");
     margin-right: 0.5em;
 }
 
-section#story b{
+main section:first-of-type b {
     font-weight: inherit;
-}
-
-section#teaser {
-    font-family: "Dreamofme";
-    margin: 1.2em;
-    font-style: italic;
 }
 
 footer{

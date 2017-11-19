@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Dreamofme";
+    src: url("dreamofme.ttf") format("truetype");
+}
+
+section#teaser {
+    font-family: "Dreamofme";
+    margin: 1.2em;
+    font-style: italic;
+}
