@@ -8,3 +8,7 @@ section#teaser {
     margin: 1.2rem;
     font-style: italic;
 }
+
+section#teaser > h2 {
+    text-align: center;
+}

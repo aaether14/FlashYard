@@ -1,0 +1,10 @@
+main section:first-of-type figure {
+    display: block;
+    margin: 1.5rem auto;
+    width: 50%;
+}
+
+main section:first-of-type figure img {
+    display: inline-block;
+    width: 100%;
+}

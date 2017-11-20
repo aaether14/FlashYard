@@ -28,7 +28,6 @@ nav{
 nav ul {
     display: inline-block;
     list-style-type: none;
-    font-size: 1rem;
 }
 
 nav li {
@@ -53,13 +52,15 @@ nav li a::first-letter{
     text-decoration: underline;
 }
 
-ul.sub_menu1, ul.sub_menu2{
+ul.sub_menu1 {
     position: absolute;
-    display: none;
+    opacity: 0.0;
     left: 0%;
+    transform: translateY(-2rem);
+    transition: all 0.25s ease-in-out;
 }
 
-nav li:hover > a{
+nav li:hover > a {
     color: #e01f2d;
 }
 
@@ -68,22 +69,12 @@ ul.sub_menu1 a:hover{
 }
 
 nav li:hover ul.sub_menu1{
-    display: initial;
-}
-
-ul.sub_menu1 li:hover ul.sub_menu2{
-    display: initial;
+    opacity: 1.0;
+    transform: translateY(0rem);
 }
 
 .darrow {
     font-size: 1.0rem;
-    position: absolute;
-    top: 0.3rem;
-    right: 0.5rem;
-}
-
-.rarrow {
-    font-size: 0.8rem;
     position: absolute;
     top: 0.3rem;
     right: 0.5rem;
