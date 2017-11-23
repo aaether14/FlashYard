@@ -8,3 +8,45 @@ main section:first-of-type figure img {
     display: inline-block;
     width: 100%;
 }
+
+main {
+    text-align: center;
+}
+
+main dl {
+    display: inline-block;
+    width: 90%;
+    padding: 1.0rem;
+    font-size: 1.15rem;
+    counter-reset: definitions;
+}
+
+main dl dt {
+    float: left;
+    width: 40%;
+    background: #cdcdcd;
+    counter-increment: definitions 1;
+}
+
+main dl dd { 
+    float: left;
+    width: 60%;
+    background: #dcdcdc;
+}
+
+aside math {
+    display: block;
+}
+
+@media screen and (max-width:1000px) {
+    main dl {
+        width: 80%;
+    }
+    main dl dt::before {
+        content: counter(definitions) ") ";
+    }
+    main dl dt, main dl dd {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}
