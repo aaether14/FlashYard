@@ -14,39 +14,18 @@
         <script> 
         $(function() {
           $("#header").load("header.html"); 
-          $("#footer").load("footer.html"); 
+          $("#footer").load("footer.html");
+          $("#table").load("table.html");
         });
         </script>
     </head>
     <body>
         <header id="header"></header>
-        <main>
+        <main class="content">
             <section>
                 <h2>Leafer's highscores</h2>
-                <p>This is the progress of <b>Leafer</b>, in his quest to rescue <b>Rose</b>, during <b>Arcade</b> mode. Ain't that impressive?</p>
-                <table>
-                    <caption>Highscores</caption>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Score</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Me</td>
-                            <td>9000</td>
-                        </tr>
-                        <tr>
-                            <td>Also me</td>
-                            <td>90001</td>
-                        </tr>
-                        <tr>
-                            <td>Still me</td>
-                            <td>211212</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <p>This is the progress of Leafer, in his quest to rescue Rose, during Arcade mode. Ain't that <em>impressive</em>?</p>
+                <table id="table"></table>
             </section>
         </main>
         <footer id="footer"></footer>

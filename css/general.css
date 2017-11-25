@@ -85,7 +85,7 @@ nav li:hover ul.sub_menu1{
     src: url("../data/fonts/mufferaw rg.ttf") format("truetype");
 }
 
-main{
+.content {
     font-family: "Mufferaw";
     font-size: 1.4rem;
     text-align: justify;
@@ -96,17 +96,17 @@ main{
     z-index: -1000;
 }
 
-main section:first-of-type > h2 {
+.content section:first-of-type > h2 {
     text-align: center;
     padding-bottom: 0.5rem;
 }
 
-main section:first-of-type > p:before {
+.content section:first-of-type > p:before {
     content: url("../data/images/leaf.png");
     margin-right: 0.5rem;
 }
 
-main section:first-of-type b {
+.content section:first-of-type b {
     font-weight: inherit;
 }
 

@@ -1,19 +1,19 @@
-main section:first-of-type figure {
+.content section:first-of-type figure {
     display: block;
     margin: 1.5rem auto;
     width: 50%;
 }
 
-main section:first-of-type figure img {
+.content section:first-of-type figure img {
     display: inline-block;
     width: 100%;
 }
 
-main {
+.content {
     text-align: center;
 }
 
-main dl {
+.content dl {
     display: inline-block;
     width: 90%;
     padding: 1.0rem;
@@ -21,14 +21,14 @@ main dl {
     counter-reset: definitions;
 }
 
-main dl dt {
+.content dl dt {
     float: left;
     width: 40%;
     background: #cdcdcd;
     counter-increment: definitions 1;
 }
 
-main dl dd { 
+.content dl dd { 
     float: left;
     width: 60%;
     background: #dcdcdc;
@@ -38,14 +38,19 @@ aside math {
     display: block;
 }
 
+.content a {
+    text-decoration: none;
+    color: black;
+}
+
 @media screen and (max-width:1000px) {
-    main dl {
+    .content dl {
         width: 80%;
     }
-    main dl dt::before {
+    .content dl dt::before {
         content: counter(definitions) ") ";
     }
-    main dl dt, main dl dd {
+    .content dl dt, .content dl dd {
         width: 100%;
         font-size: 1.2rem;
     }
