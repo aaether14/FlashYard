@@ -148,12 +148,12 @@ footer div#social {
 }
 
 footer:hover div#social {
-    animation: none;
+    animation-play-state: paused;
 }
 
 @keyframes footerSocial {
-    0% { left: -60%;}
-    100% { left: 60%;}
+    0% { margin-left: -60%;}
+    100% { margin-left: 60%;}
 }
 
 footer .fa {
