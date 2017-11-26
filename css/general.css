@@ -112,6 +112,7 @@ nav li:hover ul.sub_menu1{
 
 footer{
     display: inline-block;
+    overflow: hidden;
 }
 
 footer img.evergreen{
@@ -138,6 +139,21 @@ footer div#main::after {
     clear: both;
     overflow: hidden;
 
+}
+
+footer div#social {
+    display: inline-block;
+    position: relative;
+    animation: footerSocial 5s linear infinite;
+}
+
+footer:hover div#social {
+    animation: none;
+}
+
+@keyframes footerSocial {
+    0% { left: -60%;}
+    100% { left: 60%;}
 }
 
 footer .fa {
