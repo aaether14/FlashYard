@@ -17,6 +17,7 @@ table, th, td {
 @media screen and (max-width:650px) {
     table {
         border: none;
+        width: 65%;
     }
 
     th, thead {
