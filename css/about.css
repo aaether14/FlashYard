@@ -38,6 +38,17 @@ aside math {
     display: block;
 }
 
+aside svg polygon{
+    fill:rgb(153, 143, 221);
+    stroke:rgb(128, 31, 63);
+    stroke-width:5;
+    fill-rule:evenodd;
+}
+
+aside div#svgContent {
+    overflow: hidden;
+}
+
 .content a {
     text-decoration: none;
     color: black;
