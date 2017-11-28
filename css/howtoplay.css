@@ -1,0 +1,35 @@
+div#gallery {
+    display: inline-block;
+    width: 40%;
+    padding-top: 40%;
+    position: relative;
+    overflow: hidden;
+}
+
+div#gallery img {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+div#gallery img:nth-child(1) {
+    animation: galleryAnimation 4.5s ease-in-out infinite;
+    opacity: 0.0;
+}
+div#gallery img:nth-child(2) {
+    animation: galleryAnimation 4.5s 1.5s ease-in-out infinite;
+    opacity: 0.0;
+}
+div#gallery img:nth-child(3) {
+    animation: galleryAnimation 4.5s 3.0s ease-in-out infinite;
+    opacity: 0.0;
+}
+
+@keyframes galleryAnimation {
+    0% { opacity: 0.0; } 
+    11.11% { opacity: 1.0; }
+    33.33% { opacity: 1.0; transform: rotate(0deg); }
+    44.44% { opacity: 0.0; transform: rotate(180deg); }
+    100% { opacity: 0.0; }
+}

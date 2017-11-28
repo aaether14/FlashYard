@@ -1,0 +1,10 @@
+.content dl {
+    width: 80%;
+}
+.content dl dt::before {
+    content: counter(definitions) ") ";
+}
+.content dl dt, .content dl dd {
+    width: 100%;
+    font-size: 1.2rem;
+}
