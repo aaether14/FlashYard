@@ -54,8 +54,9 @@ nav li a::first-letter{
 
 ul.sub_menu1 {
     position: absolute;
+    visibility: hidden;
     opacity: 0.0;
-    left: 0%;
+    left: 0px;
     transform: translateY(-2rem);
     transition: all 0.25s ease-in-out;
 }
@@ -64,11 +65,12 @@ nav li:hover > a {
     color: #e01f2d;
 }
 
-ul.sub_menu1 a:hover{
+ul.sub_menu1 a:hover {
     color: #45221b;
 }
 
-nav li:hover ul.sub_menu1{
+nav li:hover ul.sub_menu1 {
+    visibility: visible;
     opacity: 1.0;
     transform: translateY(0rem);
 }
@@ -110,7 +112,7 @@ nav li:hover ul.sub_menu1{
     font-weight: inherit;
 }
 
-footer{
+footer {
     display: inline-block;
     overflow: hidden;
 }
